@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cossette+Texte:wght@400;700&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Finlandica+Headline:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.root{
+   --primary-color: #E8D5CC;
+   --secondary-color: #D5CABC;
+   --background-color: #BDA18A;
+   --text-color: #f5efe6;
+   --white: #fff;
+   --space-small: 8px;
+   --space-medium: 16px;
+   --space-large: 32px;
+}
+
+.text-center{
+  font-family: "Cossette", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text-center{
+  font-family: "Cossette", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+ 
+.py-5{
+  font-family: "Cossette", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.py-5{
+  font-family: "Cossette", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body{
+    background-color: #f5efe6;
+    margin: 0;
+    padding: 0;
+ }
+ nav{
+    display: flex;
+    background-color: #C49D83;
+    top: 0;
+    margin-top: 0;
+ }
+ .btn{
+    background-color: #BDA18A;
+    border-color: #BDA18A;
+ }
+ 
+ 
