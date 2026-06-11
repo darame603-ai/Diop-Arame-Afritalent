@@ -14,22 +14,32 @@ rel="stylesheet">
 <body> 
   <header>
      <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
-      <div class="container-fluid nav">
+      <div class="container-fluid nav" >
         <a  class="navbar-brand " href="index.html"><img src="image/projet1.jpeg" alt="" width="60px">AFRITALENT</a>
+         <!-- ✅ Bouton hamburger -->
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuNav"
+            aria-controls="menuNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     <div class="collapse navbar-collapse" id="menuNav">
           <ul  class="navbar-nav ms-auto" id="menu"> 
             <li class="nav-item"><a  class="nav-link" href="index.html" >Accueil</a></li>
             <li class="nav-item"><a  class="nav-link" href="freelances.html">Freelances</a></li>
             <li class="nav-item"><a  class="nav-link" href="about.html">A propos</a></li>
             <li class="nav-item"><a  class="nav-link" href="tarifs.html">Tarifs</a></li>
-            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a  class="nav-link active" href="contact.html">Contact</a></li>
             <li class="nav-item">
               <a  class="btn btn-dark text-white" href="contact.html">Rejoindre Afritalent</a>
             </li>
           </ul>
+          </div>
       </div>
      </nav>
   </header>
-
   
   <section id="Formulaire" class="py-5 container ">
     <form action="">
@@ -54,17 +64,10 @@ rel="stylesheet">
         <label for="">Message</label>
         <textarea class="form-control" name="" id="" style="resize: none;"></textarea>
       </div>
-      <div  class="mb-4">
-        <button class="text-center btn btn-dark" type="submit">
-          ENVOYER
-        </button>
-      </div>
-
-      <form action="">
-
+    
       <div class="mb-4">
         <label for="">Email</label>
-        <input type="text">
+        <input class="form-control" type="text">
       </div>
       <div  class="mb-4">
         <label for="">Adresse</label>
@@ -80,17 +83,19 @@ rel="stylesheet">
         </button>
       </div>
     </form>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3947439.1523202863!2d-21.725222133618157!3d14.941491438302055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ssn!4v1777134477986!5m2!1sen!2ssn" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3947439.1523202863!2d-21.725222133618157!3d14.941491438302055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ssn!4v1777134477986!5m2!1sen!2ssn" 
+    
+    height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <hr>
   <footer class="bg-dark text-white py-5">
       <div class="container">
         <div class="row">
-           <div class="col-md-4">
+           <div class="col-12, col-md-6, col-lg-4">
             <img src="image/projet1.jpeg" alt="" width="70px">
             <h5>Afritalent</h5>
               <p>La plateforme numéro 1 pour connecter les meilleurs talents africains avec les entreprises du monde entier</p>
             </div>
-          <div class="col-md-4">
+          <div class="col-12, col-md-6, col-lg-4">
             <h5>Liens utiles</h5>
               <ul class="list-unstyled">
                 <li><a href="index.html" class="text-decoration-none">Accueil</a></li>
@@ -101,7 +106,7 @@ rel="stylesheet">
               </ul>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-12, col-md-6, col-lg-4">
             <h5>Contact</h5>
               <ul class="list-unstyled">
                 <li>📍Dakar,Sénégal</li>

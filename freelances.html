@@ -13,10 +13,20 @@ rel="stylesheet">
 </head>
 <body> 
 <!-- Le contenu de la page sera ajoute ici --> 
- <header>
+  <header>
      <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
-      <div class="container-fluid nav">
+      <div class="container-fluid nav" >
         <a  class="navbar-brand " href="index.html"><img src="image/projet1.jpeg" alt="" width="60px">AFRITALENT</a>
+         <!-- ✅ Bouton hamburger -->
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuNav"
+            aria-controls="menuNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     <div class="collapse navbar-collapse" id="menuNav">
           <ul  class="navbar-nav ms-auto" id="menu"> 
             <li class="nav-item"><a  class="nav-link" href="index.html" >Accueil</a></li>
             <li class="nav-item"><a  class="nav-link active" href="freelances.html">Freelances</a></li>
@@ -27,10 +37,10 @@ rel="stylesheet">
               <a  class="btn btn-dark text-white" href="contact.html">Rejoindre Afritalent</a>
             </li>
           </ul>
+          </div>
       </div>
      </nav>
   </header>
-
   <section id="Hero" class="py-5 container">
     <h1 class="py-5">Propulsez votre carrière en travaillant sur des projets d'envergure</h1>
     <p>Rejoignez une communauté d'élite et accèdez à des missions passionnantes auprès d'entreprises locales et internationales</p>
@@ -38,11 +48,11 @@ rel="stylesheet">
   <section id="cards" class="py-5 container">
     <h1 class="text-center">Nos talents freelances</h1>
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-12, col-md-6, col-lg-4">
       </div>
     </div>
   </section>
-    <div class="d-flex gap-2 container">
+    <div class="d-flex flex-wrap gap-2 container px-3">
        <a class="btn btn-dark" href="#">Développeur</a>
       <a class="btn btn-dark" href="#">Designer UI/UX</a>
       <a class="btn btn-dark" href="#">gestion d'entreprises</a>
@@ -52,7 +62,7 @@ rel="stylesheet">
     </div>
   <section id="cards" class="py-5 container">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-12, col-md-6, col-lg-4">
           <div class="card h-100" style="width: 18rem;" >
             <img src="image/1.jpg" width="50px" class="card-img-top" alt="" style="height: 300px;" >
             <div class="card-body">
@@ -80,7 +90,7 @@ rel="stylesheet">
             </div>
       </div>
 
-      <div class="col-md-4 ">
+      <div class="col-12, col-md-6, col-lg-4 ">
           <div class="card h-100" style="width: 18rem;" >
             <img src="image/2.jpg" width="50px" class="card-img-top" alt="" style="height: 300px;" >
             <div class="card-body">
@@ -109,7 +119,7 @@ rel="stylesheet">
       </div>
 
       
-      <div class="col-md-4">
+      <div class="col-12, col-md-6, col-lg-4">
           <div class="card h-100" style="width: 18rem;" >
             <img src="image/3.jpg" width="50px" class="card-img-top" alt="" style="height: 300px;" >
             <div class="card-body">
@@ -137,7 +147,7 @@ rel="stylesheet">
           </div>
       </div>
 
-      <div class="col-md-4 py-5">
+      <div class="col-12, col-md-6, col-lg-4 py-5">
         <div class="card h-100" style="width: 18rem;" >
           <img src="image/4.jpg" width="50px" class="card-img-top" alt="" style="height: 300px;" >
           <div class="card-body">
@@ -165,7 +175,7 @@ rel="stylesheet">
           </div>
       </div>
 
-      <div class="col-md-4 py-5">
+      <div class="col-12, col-md-6, col-lg-4 py-5">
         <div class="card h-100" style="width: 18rem;" >
           <img src="image/5.jpg" width="50px" class="card-img-top" alt="" style="height: 300px;" >
           <div class="card-body">
@@ -193,7 +203,7 @@ rel="stylesheet">
           </div>
       </div>
 
-       <div class="col-md-4 py-5">
+       <div class="col-12, col-md-6, col-lg-4 py-5">
         <div class="card h-100" style="width: 18rem;" >
           <img src="image/6.jpg" width="50px" class="card-img-top" alt="" style="height: 300px;" >
           <div class="card-body">
@@ -221,7 +231,7 @@ rel="stylesheet">
           </div>
       </div>
 
-      <div class="col-md-4 py-5">
+      <div class="col-12, col-md-6, col-lg-4 py-5">
         <div class="card h-100" style="width: 18rem;" >
           <img src="image/7.jpg" width="50px" class="card-img-top" alt="" style="height: 300px;" >
           <div class="card-body">
@@ -249,7 +259,7 @@ rel="stylesheet">
           </div>
       </div>
 
-       <div class="col-md-4 py-5">
+       <div class="col-12, col-md-6, col-lg-4 py-5">
         <div class="card h-100" style="width: 18rem;" >
           <img src="image/8.jpg" width="50px" class="card-img-top" alt="" style="height: 300px;" >
           <div class="card-body">
@@ -277,7 +287,7 @@ rel="stylesheet">
           </div>
       </div>
 
-      <div class="col-md-4 py-5">
+      <div class="col-12, col-md-6, col-lg-4 py-5">
         <div class="card h-100" style="width: 18rem;" >
           <img src="image/9.jpg" width="50px" class="card-img-top" alt="" style="height: 300px;" >
           <div class="card-body">
@@ -310,12 +320,12 @@ rel="stylesheet">
     <footer class="bg-dark text-white py-5">
       <div class="container">
         <div class="row">
-           <div class="col-md-4">
+           <div class="col-12, col-md-6, col-lg-4">
              <img src="image/projet1.jpeg" alt="" width="70px">
             <h5>Afritalent</h5>
               <p>La plateforme numéro 1 pour connecter les meilleurs talents africains avec les entreprises du monde entier</p>
             </div>
-          <div class="col-md-4">
+          <div class="col-12, col-md-6, col-lg-4">
             <h5>Liens utiles</h5>
               <ul class="list-unstyled">
                 <li><a href="index.html" class="text-decoration-none">Accueil</a></li>
@@ -326,7 +336,7 @@ rel="stylesheet">
               </ul>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-12, col-md-6, col-lg-4">
             <h5>Contact</h5>
               <ul class="list-unstyled">
                 <li>📍Dakar,Sénégal</li>
