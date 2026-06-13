@@ -33,8 +33,14 @@ rel="stylesheet">
             <li class="nav-item"><a  class="nav-link" href="tarifs.html">Tarifs</a></li>
             <li class="nav-item"><a  class="nav-link active" href="contact.html">Contact</a></li>
             <li class="nav-item">
-              <a  class="btn btn-dark text-white" href="contact.html">Rejoindre Afritalent</a>
+              <a  class="btn btn-dark" href="contact.html">Rejoindre Afritalent</a>
             </li>
+             <li class="nav-item">
+  <button id="btnDark" onclick="toggleDarkMode()" 
+          class="btn btn-outline-light btn-sm ms-2">
+    🌙
+  </button>
+</li>
           </ul>
           </div>
       </div>
@@ -42,39 +48,59 @@ rel="stylesheet">
   </header>
   
   <section id="Formulaire" class="py-5 container ">
-    <form action="">
+    <div class="row">
+      <div class="contact-container">
+      <div class="contact-info">
+        <h2>CONTACTEZ-NOUS</h2>
+        <p>Rejoignez Afritalent et propulsez vos projets dès aujourd'hui!</p>
+        <div class="info-item">
+          <span>📍</span>
+          <p>Dakar,Sénégal</p>
+        </div>
+        <div class="info-item">
+          <span>📤</span>
+          <p>afritalent@gmail.com</p>
+        </div>
+        <div class="info-item">
+          <span>📞</span>
+          <p>+221 78 529 19 12</p>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form action="">
 
       <div class="mb-4 py-5">
-        <label for="">Nom</label>
+        <label for="">NOM</label>
         <input class="form-control" type="text">
       </div>
       <div  class="mb-4">
-        <label for="">Prénom</label>
+        <label for="">PRENOM</label>
         <input class="form-control" type="text">
       </div>
       <div  class="mb-4">
-        <label for="">Date de naissance</label>
+        <label for="">DATE DE NAISSANCE</label>
         <input class="form-control" type="date">
       </div>
       <div  class="mb-4">
-        <label for="">Titre professionnel</label>
+        <label for="">TITRE PROFESSIONEL</label>
           <input class="form-control" type="text">
       </div>
       <div  class="mb-4">
-        <label for="">Message</label>
+        <label for="">MESSAGE</label>
         <textarea class="form-control" name="" id="" style="resize: none;"></textarea>
       </div>
     
       <div class="mb-4">
-        <label for="">Email</label>
+        <label for="">EMAIL</label>
         <input class="form-control" type="text">
       </div>
       <div  class="mb-4">
-        <label for="">Adresse</label>
+        <label for="">ADRESSE</label>
         <input class="form-control" type="text">
       </div>
       <div  class="mb-4">
-        <label for="">Téléphone</label>
+        <label for="">TELEPHONE</label>
         <input class="form-control" type="number">
       </div>
       <div  class="mb-4">
@@ -87,6 +113,9 @@ rel="stylesheet">
     
     height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <hr>
+      </div>
+    </div>
+    </div>
   <footer class="bg-dark text-white py-5">
       <div class="container">
         <div class="row">
@@ -125,6 +154,7 @@ rel="stylesheet">
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
 ></script> 
 <!-- Votre script JavaScript --> 
+  <button id="btnTop" onclick="scrollToTop()">↑</button>
 <script src="js/main.js"></script>
 </body>
 </html>
