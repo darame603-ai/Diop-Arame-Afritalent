@@ -1,3 +1,5 @@
+
+document.body.classList.add('js-loaded');
 // DARK/LIGHT mode
 const btnDark = document.getElementById('btnDark');
 if (localStorage.getItem('darkMode')==='enabled'){
@@ -45,3 +47,36 @@ function scrollToTop(){
         behavior: 'smooth' 
     });
 }
+
+// Compteurs statistiques
+function animerCompteur(element){
+    const target = parseInt(element.getAttribute('data-target'));
+    const duree = 2000;
+    const increment = target / (duree / 16);
+    let actuel = 0;
+    const timer = setInterval(() => {
+        actuel += increment;
+        if (actuel >= target){
+            element.textContent = target.toLocaleString();
+            clearInterval(timer);
+        }
+        else{
+            element.textContent = Math.floor(actuel).toLocaleString();
+        }
+    },16);
+}
+
+// Fade-in
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            const Compteurs = entry.target.querySelectorAll('.stat-nombre');
+            Compteurs.forEach(c => animerCompteur(c));
+            observer.unobserve(entry.target);
+        }
+    });
+}, {threshold:0.2});
+document.querySelectorAll('.fade-section').forEach(section =>{
+    observer.observe(section);
+});

@@ -45,7 +45,7 @@ body{
 
  nav{
     display: flex;
-    background-color: #00334A;
+    background-color: #859393;
     top: 0;
     margin-top: 0;
     padding: 15px 20px;
@@ -57,7 +57,7 @@ body{
  .btn{
     background-color: white;
     color: black;
-    border: 1px solid rgb(239, 91, 37);
+    border: 1px solid #001724;
     transition: all 0.3s ease;
  }
  .btn:hover{
@@ -167,7 +167,7 @@ body{
   padding: 1.5rem;
   display: flex;
   color: white;
-  background: #C2E0E3;
+  background: #B4BAB1;
   min-height: 200px;
   flex-direction: column;
   justify-content: flex-end;
@@ -178,21 +178,21 @@ body{
  }
  .bento-card:hover{
   transform: translateY(-8px);
-  box-shadow: 0 10px 20px #E0FCFC;
+  box-shadow: 0 10px 20px #CED0C3;
 }
  
  .bento-card:nth-child(1),
  .bento-card:nth-child(4),
  .bento-card:nth-child(5){
   grid-column: span 2;
-  background: #C2E0E3;
+  background: #B4BAB1;
   color: black;
  }
  .bento-card:nth-child(2),
   .bento-card:nth-child(3),
   .bento-card:nth-child(6){
   grid-column: span 1;
-  background: #C2E0E3;
+  background: #B4BAB1;
   color: black;
  }
  .numéro{
@@ -214,7 +214,7 @@ body{
   margin: auto;
 }
 .carte{
-  background: #C2E0E3;
+  background: #B4BAB1;
   border-radius: 1rem;
   padding: 2rem 1rem;
   text-align: center;
@@ -225,19 +225,18 @@ body{
 .carte:hover{
   transform: scale(1.05);
   transition: 0.3s ease;
-  box-shadow: 0 10px 20px #E0FCFC;
+  box-shadow: 0 10px 20px #CED0C3 !important;
 }
 .card{
+  background: #B4BAB1;
    transition: transform 0.3s ease,
-              box-shadow 0.3s ease;
+              box-shadow 0.3s ease !important;
 }
 .card:hover{
   transform: translateY(-8px);
-  box-shadow: 0 10px 20px #E0FCFC;
+  box-shadow: 0 10px 20px #CED0C3 !important;
 }
-.h-100{
-  border:  1px solid rgb(239, 91, 37);
-}
+
 /* les autres cartes s'effacent */
 #tarifs  .col-lg-4:not(.premium) .card{
   opacity: 0.7;
@@ -448,9 +447,9 @@ body.dark-mode #categories {
    border-color: white !important;
 }
 body.dark-mode .carte{
-  background-color: #C2E0E3;
+  background-color: #859393;
   border: 1px solid #e0e0e0 !important;
-  color: #000 !important;
+  color: white !important;
 }
 body.dark-mode #CCM{
   background-color: rgb(24, 24, 24) !important;
@@ -458,9 +457,9 @@ body.dark-mode #CCM{
 
 }
 body.dark-mode .bento-card{
-  background-color: #C2E0E3;
+  background-color: #859393;
   border: 1px solid #e0e0e0 !important;
-  color: #000 !important;
+  color: white !important;
 }
 body.dark-mode #Temoignages{
   background-color: rgb(24, 24, 24) !important;
@@ -470,8 +469,11 @@ body.dark-mode #Formulaire{
   background-color: rgb(24, 24, 24) !important;
   color: white !important;
 }
+body.dark-mode #chiffres {
+  background-color: rgb(24, 24, 24) !important;
+}
 body.dark-mode .h-100{
- background-color: #C2E0E3;
+ background-color: #859393;
 }
 
 body.dark-mode footer{
@@ -492,7 +494,7 @@ body.dark-mode .card p,
 body.dark-mode .card-title,
 body.dark-mode .card-text,
 body.dark-mode .h-100{
- color: black !important;
+ color: white !important;
 }
 
 /* navbar au scroll */
@@ -500,7 +502,7 @@ body.dark-mode .h-100{
   transition: all 0.3s ease !important;
 }
 .navbar-scrolled{
-  background-color: #5C6C73;
+  background-color: #495457;
   box-shadow: 0 4px 20px white !important;
   /* padding: 0.3rem 1rem !important; effet shrink  */
 }
@@ -512,7 +514,7 @@ body.dark-mode .h-100{
   width: 45px;
   height: 45px;
   border-radius: 60%;
-  background: #007FA9;
+  background: #495457;
   color: white;
   border: none;
   font-size: 1.2rem;
@@ -524,6 +526,17 @@ body.dark-mode .h-100{
   z-index: 999;
 }
 #btnTop:hover{
-  background:  rgb(240, 117, 72);
+  background: #007FA9;
   transform: translateY(-3px);
 }
+
+.js-loaded .fade-section{
+  opacity: 0;
+  transform: translateY(0);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.js-loaded .fade-section.visible{
+  opacity: 1;
+  transform: translateY(-8px);
+}
+
