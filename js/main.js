@@ -80,3 +80,89 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.fade-section').forEach(section =>{
     observer.observe(section);
 });
+
+// FILTRAGE POUR LES FREELANCES
+function filtrer(categorie) {
+  const cartes = document.querySelectorAll('[data-categorie]');
+  const boutons = document.querySelectorAll('.filtre-btn');
+
+  // Met à jour le bouton actif
+  boutons.forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+
+  // Filtre les cartes
+  cartes.forEach(carte => {
+    if (categorie === 'tous' || 
+        carte.getAttribute('data-categorie') === categorie) {
+      carte.style.display = 'block';
+    } else {
+      carte.style.display = 'none';
+    }
+  });
+}
+
+// Validation de formulaire
+function validerFormulaire(event){
+    event.preventDefault();
+    let valide = true;
+    // Récupère les champs
+    const nom = document.getElementById('nom');
+    const prenom = document.getElementById('prenom');
+     const email = document.getElementById('email');
+      const message = document.getElementById('message');
+    // Réinitialise les erreurs
+    document.querySelectorAll('.erreur').forEach(e => e.textContent = '');
+    document.querySelectorAll('.form-control').forEach(f => {
+        f.classList.remove('is-invalid');
+        f.classList.remove('is-valid');
+    });
+    // Verification nom
+    if (nom && nom.value.trim()===''){
+        afficherErreur('erreur-nom', 'Le nom est requis');
+        nom.classList.add('is-invalid');
+        valide = false;
+    }
+    else if (nom){
+        nom.classList.add('is-valid')
+    }
+    // verification prenom
+    if (prenom && prenom.value.trim()===''){
+        afficherErreur('erreur-prenom','Le prenom est requis')
+    }
+    else if(prenom){
+        prenom.classList.add('is-valid');
+    }
+    // Verification email avec regex
+    const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (email && !regexEmail.test(email.value)){
+        afficherErreur('erreur-email','Format email invalide (ex:nom@email.com)');
+        email.classList.add('is-invalid');
+        valide = false;
+    }
+    else if (email){
+        email.classList.add('is-valid');
+    }
+    // Verification message (minimum 20 caractères)
+    if (message && message.value.trim().length<20){
+        afficherErreur('erreur-message',
+            'Message trop court(20 caractères minimum)');
+        message.classList.add(is-invalid);
+        valide = false;
+    }
+    else if (message){
+        message.classList.add('is-valid');
+    }
+    // Message de succès si tout est valide
+    if (valide) {
+        document.getElementById('message-succes').style.display = 'block';
+        event.target.reset(); 
+        setTimeout(()=>{
+             document.getElementById('message-succes').style.display = 'none';
+        },3000);
+    }
+}
+
+function afficherErreur(id,message){
+    const el = document.getElementById(id);
+    if (el) el.textContent = message;
+}

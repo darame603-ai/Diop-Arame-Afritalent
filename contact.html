@@ -47,75 +47,103 @@ rel="stylesheet">
      </nav>
   </header>
   
-  <section id="Formulaire" class="py-5 container ">
-    <div class="row">
-      <div class="contact-container">
-      <div class="contact-info">
-        <h2>CONTACTEZ-NOUS</h2>
-        <p>Rejoignez Afritalent et propulsez vos projets dès aujourd'hui!</p>
-        <div class="info-item">
-          <span>📍</span>
-          <p>Dakar,Sénégal</p>
-        </div>
-        <div class="info-item">
-          <span>📤</span>
-          <p>afritalent@gmail.com</p>
-        </div>
-        <div class="info-item">
-          <span>📞</span>
-          <p>+221 78 529 19 12</p>
-        </div>
-      </div>
+  <section id="Formulaire" class="py-5 container">
 
-      <div class="contact-form">
-        <form action="">
+  <div class="contact-container">
 
-      <div class="mb-4 py-5">
-        <label for="" class="fw-bold">NOM</label>
-        <input class="form-control" type="text">
+    <!-- Infos -->
+    <div class="contact-info">
+      <h2>CONTACTEZ-NOUS</h2>
+      <p>Rejoignez Afritalent et propulsez vos projets dès aujourd'hui!</p>
+      <div class="info-item">
+        <span>📍</span>
+        <p>Dakar, Sénégal</p>
       </div>
-      <div  class="mb-4">
-        <label for="" class="fw-bold">PRENOM</label>
-        <input class="form-control" type="text">
+      <div class="info-item">
+        <span>📤</span>
+        <p>afritalent@gmail.com</p>
       </div>
-      <div  class="mb-4">
-        <label for="" class="fw-bold">DATE DE NAISSANCE</label>
-        <input class="form-control" type="date">
+      <div class="info-item">
+        <span>📞</span>
+        <p>+221 78 529 19 12</p>
       </div>
-      <div  class="mb-4">
-        <label for="" class="fw-bold">TITRE PROFESSIONEL</label>
-          <input class="form-control" type="text">
-      </div>
-      <div  class="mb-4">
-        <label for="" class="fw-bold">MESSAGE</label>
-        <textarea class="form-control" name="" id="" style="resize: none;"></textarea>
-      </div>
-    
-      <div class="mb-4">
-        <label for="" class="fw-bold">EMAIL</label>
-        <input class="form-control" type="text">
-      </div>
-      <div  class="mb-4">
-        <label for="" class="fw-bold">ADRESSE</label>
-        <input class="form-control" type="text">
-      </div>
-      <div  class="mb-4">
-        <label for="" class="fw-bold">TELEPHONE</label>
-        <input class="form-control" type="number">
-      </div>
-      <div  class="mb-4">
-        <button class="text-center btn btn-dark" type="submit">
-          ENVOYER
+    </div>
+
+    <!-- Formulaire -->
+    <div class="contact-form">
+      <form onsubmit="validerFormulaire(event)">
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <label class="fw-bold">NOM</label>
+          <input class="form-control" type="text" 
+                 id="nom" placeholder="Votre nom">
+          <small class="erreur text-danger" id="erreur-nom"></small>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <label class="fw-bold">PRÉNOM</label>
+          <input class="form-control" type="text" 
+                 id="prenom" placeholder="Votre prénom">
+          <small class="erreur text-danger" id="erreur-prenom"></small>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <label class="fw-bold">EMAIL</label>
+          <input class="form-control" type="email" 
+                 id="email" placeholder="votre@email.com">
+          <small class="erreur text-danger" id="erreur-email"></small>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <label class="fw-bold">TÉLÉPHONE</label>
+          <input class="form-control" type="tel" 
+                 id="telephone" >
+          <small class="erreur text-danger" id="erreur-telephone"></small>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <label class="fw-bold">TITRE PROFESSIONNEL</label>
+          <input class="form-control" type="text" 
+                 id="titre" placeholder="Ex: Développeur Web">
+          <small class="erreur text-danger" id="erreur-titre"></small>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <label class="fw-bold">MESSAGE</label>
+          <textarea class="form-control" id="message" 
+                    rows="5" style="resize: none;"
+                    placeholder="Votre message (20 caractères minimum)">
+          </textarea>
+          <small class="erreur text-danger" id="erreur-message"></small>
+        </div>
+
+        <!-- Message succès -->
+        <div id="message-succes" 
+             class="alert alert-success" 
+             style="display: none;">
+          ✅ Message envoyé avec succès !
+        </div>
+
+        <button class="btn btn-dark w-100" type="submit">
+          ENVOYER ✉️
         </button>
-      </div>
-    </form>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3947439.1523202863!2d-21.725222133618157!3d14.941491438302055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ssn!4v1777134477986!5m2!1sen!2ssn" 
-    
-    height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <hr>
-      </div>
+
+      </form>
     </div>
-    </div>
+
+  </div>
+
+  <!-- Google Maps -->
+  
+  <div class="col-12 col-md-6 col-lg-4">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3947439.1523202863!2d-21.725222133618157!3d14.941491438302055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ssn!4v1777134477986!5m2!1sen!2ssn"
+            style="border:0; width:100%; height:400px;" 
+            allowfullscreen="" loading="lazy">
+    </iframe>
+  </div>
+  
+
+</section>
   <footer class="bg-dark text-white py-5">
       <div class="container">
         <div class="row">

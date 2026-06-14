@@ -58,17 +58,27 @@ rel="stylesheet">
       </div>
     </div>
   </section>
-    <div class="d-flex flex-wrap gap-2 container px-3">
-       <a class="btn btn-dark" href="#">Développeur</a>
-      <a class="btn btn-dark" href="#">Designer UI/UX</a>
-      <a class="btn btn-dark" href="#">gestion d'entreprises</a>
-      <a class="btn btn-dark" href="#"> Data scientist</a>
-      <a class="btn btn-dark" href="#"> Monteur Vidéo</a>
-      <a class="btn btn-dark" href="#">sécurité informatique</a>
+    <div class="d-flex flex-wrap gap-2 container px-3 py-3">
+       <button class="btn btn-dark filtre-btn active"
+       onclick="filtrer('tous')" href="#">Tous</button>
+       <button class="btn btn-dark filtre-btn"
+        onclick="filtrer('developpeur')"href="#">Développeur</button>
+      <button class="btn btn-dark filtre-btn"
+        onclick="filtrer('design')"href="#">Designer UI/UX</button>
+      <button class="btn btn-dark filtre-btn"
+        onclick="filtrer('gestion')"href="#">gestion d'entreprises</button>
+      <button class="btn btn-dark filtre-btn"
+        onclick="filtrer('data')"href="#"> Data scientist</button>
+      <button class="btn btn-dark filtre-btn"
+        onclick="filtrer('video')"href="#"> Monteur Vidéo</button>
+      <button class="btn btn-dark filtre-btn"
+        onclick="filtrer('securite')"href="#">sécurité informatique</button>
+       <button class="btn btn-dark filtre-btn"
+        onclick="filtrer('redaction')"href="#">Rédacteur web</button>
     </div>
   <section id="cards" class="py-5 container">
-    <div class="row">
-      <div class="col-12 col-md-6 col-lg-4">
+    <div class="row justify-content-center g-4">
+      <div class="col-12 col-md-6 col-lg-4" data-categorie="developpeur">
           <div class="card h-100 border-0 shadow-sm p-3" style="width: 18rem;" >
             <img src="image/1.jpg" width="50px" class="card-img-top" alt="" style="height: 300px;" >
             <div class="card-body">
@@ -96,7 +106,7 @@ rel="stylesheet">
             </div>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-4 ">
+      <div class="col-12 col-md-6 col-lg-4 " data-categorie="design">
           <div class="card h-100 border-0 shadow-sm p-3" style="width: 18rem;" >
             <img src="image/2.jpg" width="50px" class="card-img-top" alt="" style="height: 300px;" >
             <div class="card-body">
@@ -125,7 +135,7 @@ rel="stylesheet">
       </div>
 
       
-      <div class="col-12 col-md-6 col-lg-4">
+      <div class="col-12 col-md-6 col-lg-4" data-categorie="marketing">
           <div class="card h-100 border-0 shadow-sm p-3" style="width: 18rem;" >
             <img src="image/3.jpg" width="50px" class="card-img-top" alt="" style="height: 300px;" >
             <div class="card-body">
@@ -153,7 +163,7 @@ rel="stylesheet">
           </div>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-4 py-5">
+      <div class="col-12 col-md-6 col-lg-4 py-5" data-categorie="redaction">
         <div class="card h-100 border-0 shadow-sm p-3" style="width: 18rem;" >
           <img src="image/4.jpg" width="50px" class="card-img-top" alt="" style="height: 300px;" >
           <div class="card-body">
@@ -181,7 +191,7 @@ rel="stylesheet">
           </div>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-4 py-5">
+      <div class="col-12 col-md-6 col-lg-4 py-5" data-categorie="data">
         <div class="card h-100 border-0 shadow-sm p-3" style="width: 18rem;" >
           <img src="image/5.jpg" width="50px" class="card-img-top" alt="" style="height: 300px;" >
           <div class="card-body">
@@ -209,7 +219,7 @@ rel="stylesheet">
           </div>
       </div>
 
-       <div class="col-12 col-md-6 col-lg-4 py-5">
+       <div class="col-12 col-md-6 col-lg-4 py-5" data-categorie="data">
         <div class="card h-100 border-0 shadow-sm p-3" style="width: 18rem;" >
           <img src="image/6.jpg" width="50px" class="card-img-top" alt="" style="height: 300px;" >
           <div class="card-body">
@@ -237,7 +247,7 @@ rel="stylesheet">
           </div>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-4 py-5">
+      <div class="col-12 col-md-6 col-lg-4 py-5" data-categorie="video">
         <div class="card h-100 border-0 shadow-sm p-3" style="width: 18rem;" >
           <img src="image/7.jpg" width="50px" class="card-img-top" alt="" style="height: 300px;" >
           <div class="card-body">
@@ -265,7 +275,7 @@ rel="stylesheet">
           </div>
       </div>
 
-       <div class="col-12 col-md-6 col-lg-4 py-5">
+       <div class="col-12 col-md-6 col-lg-4 py-5" data-categorie="gestion">
         <div class="card h-100 border-0 shadow-sm p-3" style="width: 18rem;" >
           <img src="image/8.jpg" width="50px" class="card-img-top" alt="" style="height: 300px;" >
           <div class="card-body">
@@ -293,7 +303,7 @@ rel="stylesheet">
           </div>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-4 py-5">
+      <div class="col-12 col-md-6 col-lg-4 py-5" data-categorie="securite">
         <div class="card h-100 border-0 shadow-sm p-3" style="width: 18rem;" >
           <img src="image/9.jpg" width="50px" class="card-img-top" alt="" style="height: 300px;" >
           <div class="card-body">
