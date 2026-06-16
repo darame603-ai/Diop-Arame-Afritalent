@@ -149,7 +149,7 @@ function validerFormulaire(event){
         message.classList.add(is-invalid);
         valide = false;
     }
-    else if (message){
+    else if (message){ 
         message.classList.add('is-valid');
     }
     // Message de succès si tout est valide

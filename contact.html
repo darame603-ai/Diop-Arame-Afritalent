@@ -13,9 +13,10 @@ rel="stylesheet">
 </head>
 <body> 
   <header>
+    <!-- NAVBAR -->
      <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
       <div class="container-fluid nav" >
-        <a  class="navbar-brand " href="index.html"><img src="image/projet1.jpeg" alt="" width="60px">AFRITALENT</a>
+        <a  class="navbar-brand " href="index.html"><img src="image/projet1.jpeg" alt="logo" width="60">AFRITALENT</a>
          <!-- ✅ Bouton hamburger -->
     <button class="navbar-toggler" type="button"
             data-bs-toggle="collapse"
@@ -46,114 +47,113 @@ rel="stylesheet">
       </div>
      </nav>
   </header>
-  
-  <section id="Formulaire" class="py-5 container">
+  <!-- FORMULAIRE -->
+ <section id="Formulaire" class="py-5">
+    <div class="container">
+      
+      <div class="row g-4 align-items-stretch">
+        
+        <div class="col-12 col-md-5 py-5">
+          <div class="bg-dark text-white p-4 h-100 rounded shadow-sm d-flex flex-column justify-content-center">
+            <h1 class="mb-3 fw-bold text-uppercase">Contactez-nous</h1>
+            <p class="text-white-50 mb-4">Rejoignez Afritalent et propulsez vos projets dès aujourd'hui !</p>
+            
+            <div class="d-flex align-items-center mb-3">
+              <span class="fs-4 me-3">📍</span>
+              <p class="mb-0">Dakar, Sénégal</p>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+              <span class="fs-4 me-3">📤</span>
+              <p class="mb-0">afritalent@gmail.com</p>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+              <span class="fs-4 me-3">📞</span>
+              <p class="mb-0">+221 78 529 19 12</p>
+            </div>
+          </div>
+        </div>
 
-  <div class="contact-container">
+        <div class="col-12 col-md-7 py-5">
+          <div class="bg-light p-4 h-100 rounded shadow-sm">
+            <form onsubmit="validerFormulaire(event)">
+              
+              <div class="row g-3">
+                
+                <div class="col-12 col-md-6 col-lg-4">
+                  <label for="nom" class="form-label fw-bold small">NOM</label>
+                  <input class="form-control" type="text" id="nom" placeholder="Votre nom">
+                  <small class="erreur text-danger d-block mt-1" id="erreur-nom"></small>
+                </div>
 
-    <!-- Infos -->
-    <div class="contact-info">
-      <h2>CONTACTEZ-NOUS</h2>
-      <p>Rejoignez Afritalent et propulsez vos projets dès aujourd'hui!</p>
-      <div class="info-item">
-        <span>📍</span>
-        <p>Dakar, Sénégal</p>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <label for="prenom" class="form-label fw-bold small">PRÉNOM</label>
+                  <input class="form-control" type="text" id="prenom" placeholder="Votre prénom">
+                  <small class="erreur text-danger d-block mt-1" id="erreur-prenom"></small>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                  <label for="email" class="form-label fw-bold small">EMAIL</label>
+                  <input class="form-control" type="email" id="email" placeholder="votre@email.com">
+                  <small class="erreur text-danger d-block mt-1" id="erreur-email"></small>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                  <label for="telephone" class="form-label fw-bold small">TÉLÉPHONE</label>
+                  <input class="form-control" type="tel" id="telephone" placeholder="+221 ...">
+                  <small class="erreur text-danger d-block mt-1" id="erreur-telephone"></small>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                  <label for="titre" class="form-label fw-bold small">TITRE PROFESSIONNEL</label>
+                  <input class="form-control" type="text" id="titre" placeholder="Ex: Développeur">
+                  <small class="erreur text-danger d-block mt-1" id="erreur-titre"></small>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                  <label for="message" class="form-label fw-bold small">MESSAGE</label>
+                  <textarea class="form-control" id="message" rows="1" style="resize: none;" placeholder="Votre message..."></textarea>
+                  <small class="erreur text-danger d-block mt-1" id="erreur-message"></small>
+                </div>
+
+                <div class="col-12">
+                  <div id="message-succes" class="alert alert-success py-2 mb-0" style="display: none;">
+                    ✅ Message envoyé avec succès !
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <button class="btn btn-dark w-100 py-2 fw-bold" type="submit">
+                    ENVOYER ✉️
+                  </button>
+                </div>
+
+              </div> </form>
+          </div>
+        </div>
+
+      </div> <div class="row mt-4">
+        <div class="col-12">
+          <div class="rounded overflow-hidden shadow-sm col-12 col-md-6 col-lg-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.761747833077!2d-17.2917765!3d14.7259681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1bc294eb849cf%3A0x6b44fb25ff743fc1!2sKeur%20Massar%2C%20S%C3%A9n%C3%A9gal!5e0!3m2!1sfr!2snl!4v1710000000000!5m2!1sfr!2snl" 
+                    style="border:0; width:100%; height:300px;" 
+                    allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
+        </div>
       </div>
-      <div class="info-item">
-        <span>📤</span>
-        <p>afritalent@gmail.com</p>
-      </div>
-      <div class="info-item">
-        <span>📞</span>
-        <p>+221 78 529 19 12</p>
-      </div>
+
     </div>
-
-    <!-- Formulaire -->
-    <div class="contact-form">
-      <form onsubmit="validerFormulaire(event)">
-
-        <div class="col-12 col-md-6 col-lg-4">
-          <label class="fw-bold">NOM</label>
-          <input class="form-control" type="text" 
-                 id="nom" placeholder="Votre nom">
-          <small class="erreur text-danger" id="erreur-nom"></small>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4">
-          <label class="fw-bold">PRÉNOM</label>
-          <input class="form-control" type="text" 
-                 id="prenom" placeholder="Votre prénom">
-          <small class="erreur text-danger" id="erreur-prenom"></small>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4">
-          <label class="fw-bold">EMAIL</label>
-          <input class="form-control" type="email" 
-                 id="email" placeholder="votre@email.com">
-          <small class="erreur text-danger" id="erreur-email"></small>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4">
-          <label class="fw-bold">TÉLÉPHONE</label>
-          <input class="form-control" type="tel" 
-                 id="telephone" >
-          <small class="erreur text-danger" id="erreur-telephone"></small>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4">
-          <label class="fw-bold">TITRE PROFESSIONNEL</label>
-          <input class="form-control" type="text" 
-                 id="titre" placeholder="Ex: Développeur Web">
-          <small class="erreur text-danger" id="erreur-titre"></small>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4">
-          <label class="fw-bold">MESSAGE</label>
-          <textarea class="form-control" id="message" 
-                    rows="5" style="resize: none;"
-                    placeholder="Votre message (20 caractères minimum)">
-          </textarea>
-          <small class="erreur text-danger" id="erreur-message"></small>
-        </div>
-
-        <!-- Message succès -->
-        <div id="message-succes" 
-             class="alert alert-success" 
-             style="display: none;">
-          ✅ Message envoyé avec succès !
-        </div>
-
-        <button class="btn btn-dark w-100" type="submit">
-          ENVOYER ✉️
-        </button>
-
-      </form>
-    </div>
-
-  </div>
-
-  <!-- Google Maps -->
-  
-  <div class="col-12 col-md-6 col-lg-4">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3947439.1523202863!2d-21.725222133618157!3d14.941491438302055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ssn!4v1777134477986!5m2!1sen!2ssn"
-            style="border:0; width:100%; height:400px;" 
-            allowfullscreen="" loading="lazy">
-    </iframe>
-  </div>
-  
-
-</section>
+  </section>
   <footer class="bg-dark text-white py-5">
       <div class="container">
         <div class="row">
            <div class="col-12 col-md-6 col-lg-4">
-            <img src="image/projet1.jpeg" alt="" width="70px">
-            <h5>Afritalent</h5>
+            <img src="image/projet1.jpeg" alt="logo" width="70">
+            <h2>Afritalent</h2>
               <p>La plateforme numéro 1 pour connecter les meilleurs talents africains avec les entreprises du monde entier</p>
             </div>
           <div class="col-12 col-md-6 col-lg-4">
-            <h5>Liens utiles</h5>
+            <h2>Liens utiles</h2>
               <ul class="list-unstyled">
                 <li><a href="index.html" class="text-decoration-none">Accueil</a></li>
                 <li><a href="freelances.html" class="text-decoration-none">Trouver un freelances</a></li>
@@ -164,7 +164,7 @@ rel="stylesheet">
             </div>
 
             <div class="col-12 col-md-6 col-lg-4">
-            <h5>Contact</h5>
+            <h2>Contact</h2>
               <ul class="list-unstyled">
                 <li>📍Dakar,Sénégal</li>
                 <li>📤afritalent@gmail.com</li>

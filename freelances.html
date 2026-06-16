@@ -14,9 +14,10 @@ rel="stylesheet">
 <body> 
 <!-- Le contenu de la page sera ajoute ici --> 
   <header>
+    <!-- NAVBAR -->
      <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
       <div class="container-fluid nav" >
-        <a  class="navbar-brand " href="index.html"><img src="image/projet1.jpeg" alt="" width="60px">AFRITALENT</a>
+        <a  class="navbar-brand " href="index.html"><img src="image/projet1.jpeg" alt="logo" width="60">AFRITALENT</a>
          <!-- ✅ Bouton hamburger -->
     <button class="navbar-toggler" type="button"
             data-bs-toggle="collapse"
@@ -47,6 +48,7 @@ rel="stylesheet">
       </div>
      </nav>
   </header>
+  <!-- HERO -->
   <section id="Hero" class="py-5 container">
     <h1 class="py-5">Propulsez votre carrière en travaillant sur des projets d'envergure</h1>
     <p>Rejoignez une communauté d'élite et accèdez à des missions passionnantes auprès d'entreprises locales et internationales</p>
@@ -60,29 +62,30 @@ rel="stylesheet">
   </section>
     <div class="d-flex flex-wrap gap-2 container px-3 py-3">
        <button class="btn btn-dark filtre-btn active"
-       onclick="filtrer('tous')" href="#">Tous</button>
+       onclick="filtrer('tous')" >Tous</button>
        <button class="btn btn-dark filtre-btn"
-        onclick="filtrer('developpeur')"href="#">Développeur</button>
+        onclick="filtrer('developpeur')">Développeur</button>
       <button class="btn btn-dark filtre-btn"
-        onclick="filtrer('design')"href="#">Designer UI/UX</button>
+        onclick="filtrer('design')">Designer UI/UX</button>
       <button class="btn btn-dark filtre-btn"
-        onclick="filtrer('gestion')"href="#">gestion d'entreprises</button>
+        onclick="filtrer('gestion')">gestion d'entreprises</button>
       <button class="btn btn-dark filtre-btn"
-        onclick="filtrer('data')"href="#"> Data scientist</button>
+        onclick="filtrer('data')"> Data scientist</button>
       <button class="btn btn-dark filtre-btn"
-        onclick="filtrer('video')"href="#"> Monteur Vidéo</button>
+        onclick="filtrer('video')"> Monteur Vidéo</button>
       <button class="btn btn-dark filtre-btn"
-        onclick="filtrer('securite')"href="#">sécurité informatique</button>
+        onclick="filtrer('securite')">sécurité informatique</button>
        <button class="btn btn-dark filtre-btn"
-        onclick="filtrer('redaction')"href="#">Rédacteur web</button>
+        onclick="filtrer('redaction')">Rédacteur web</button>
     </div>
-  <section id="cards" class="py-5 container">
+    <!-- CARTES FREELANCES -->
+  <section  class="py-5 container">
     <div class="row justify-content-center g-4">
       <div class="col-12 col-md-6 col-lg-4" data-categorie="developpeur">
           <div class="card h-100 border-0 shadow-sm p-3" style="width: 18rem;" >
-            <img src="image/1.jpg" width="50px" class="card-img-top" alt="" style="height: 300px;" >
+            <img src="image/1.jpg" width="50" class="card-img-top" alt="Serigne Fall" style="height: 300px;" >
             <div class="card-body">
-          <h5 card-title>Serigne FALL, Développeur full-stack python & react</h5>
+          <h2 >Serigne FALL, Développeur full-stack python & react</h2>
           <p>Expert en création d'applications web sur mesure et automatisation de processsus.5ans d'experiences</p>
           <div class="d-flex justify-content-center py-5">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
@@ -108,9 +111,9 @@ rel="stylesheet">
 
       <div class="col-12 col-md-6 col-lg-4 " data-categorie="design">
           <div class="card h-100 border-0 shadow-sm p-3" style="width: 18rem;" >
-            <img src="image/2.jpg" width="50px" class="card-img-top" alt="" style="height: 300px;" >
+            <img src="image/2.jpg" width="50" class="card-img-top" alt="Yaye Fatou Ndiour" style="height: 300px;" >
             <div class="card-body">
-            <h5 card-title>Aminata NDIAYE, Designer UI/UX & Brand Identify</h5>
+            <h2 >Yaye Fatou Ndiour, Designer UI/UX & Brand Identify</h2>
           <p>Je crée des interfaces modernes et des logos qui marquent l'esprit de vos clients. Specialisée dans le style minimaliste</p>
           <div class="d-flex justify-content-center py-5">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
@@ -137,9 +140,9 @@ rel="stylesheet">
       
       <div class="col-12 col-md-6 col-lg-4" data-categorie="marketing">
           <div class="card h-100 border-0 shadow-sm p-3" style="width: 18rem;" >
-            <img src="image/3.jpg" width="50px" class="card-img-top" alt="" style="height: 300px;" >
+            <img src="image/3.jpg" width="50" class="card-img-top" alt="Omar Diop" style="height: 300px;" >
             <div class="card-body">
-            <h5 card-title>Omar DIOP, Community Manager & Stratège Digital</h5>
+            <h2 >Omar DIOP, Community Manager & Stratège Digital</h2>
           <p>J'aide les entreprises à booster leur visibilité sur Instagram et sur LinkdIn grace à du contenu viral</p>
           <div class="d-flex justify-content-center py-5">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
@@ -165,9 +168,9 @@ rel="stylesheet">
 
       <div class="col-12 col-md-6 col-lg-4 py-5" data-categorie="redaction">
         <div class="card h-100 border-0 shadow-sm p-3" style="width: 18rem;" >
-          <img src="image/4.jpg" width="50px" class="card-img-top" alt="" style="height: 300px;" >
+          <img src="image/4.jpg" width="50" class="card-img-top" alt="Sarah Ndoye" style="height: 300px;" >
           <div class="card-body">
-          <h5 card-title>Sarah Ndoye, Redactrice web et traductrice</h5>
+          <h2 >Sarah Ndoye, Redactrice web et traductrice</h2>
         <p>Rédaction d'articles optimisés pour google (SEO) et traduction de documents (Francais anglais)</p>
         <div class="d-flex justify-content-center py-5">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
@@ -193,9 +196,9 @@ rel="stylesheet">
 
       <div class="col-12 col-md-6 col-lg-4 py-5" data-categorie="data">
         <div class="card h-100 border-0 shadow-sm p-3" style="width: 18rem;" >
-          <img src="image/5.jpg" width="50px" class="card-img-top" alt="" style="height: 300px;" >
+          <img src="image/5.jpg" width="50" class="card-img-top" alt="Ousmane Gueye" style="height: 300px;" >
           <div class="card-body">
-          <h5 card-title>Ousmane Gueye, Redacteur web  SEO & Storyteller</h5>
+          <h2 >Ousmane Gueye, Redacteur web  SEO & Storyteller</h2>
         <p>Rédaction d'articles optimisées pour google et création de scripts captivants pour vos vidéos</p>
         <div class="d-flex justify-content-center py-5">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
@@ -221,9 +224,9 @@ rel="stylesheet">
 
        <div class="col-12 col-md-6 col-lg-4 py-5" data-categorie="data">
         <div class="card h-100 border-0 shadow-sm p-3" style="width: 18rem;" >
-          <img src="image/6.jpg" width="50px" class="card-img-top" alt="" style="height: 300px;" >
+          <img src="image/6.jpg" width="50" class="card-img-top" alt="Fatou Sow" style="height: 300px;" >
           <div class="card-body">
-          <h5 card-title>Fatou Sow, Data scientist & Analyste BI</h5>
+          <h2 >Fatou Sow, Data scientist & Analyste BI</h2>
         <p>Je transforme vos données brutes en décisions stratégiques. Specialiste Python, SQL et tableaux de bords interactifs</p>
         <div class="d-flex justify-content-center py-5">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
@@ -249,9 +252,9 @@ rel="stylesheet">
 
       <div class="col-12 col-md-6 col-lg-4 py-5" data-categorie="video">
         <div class="card h-100 border-0 shadow-sm p-3" style="width: 18rem;" >
-          <img src="image/7.jpg" width="50px" class="card-img-top" alt="" style="height: 300px;" >
+          <img src="image/7.jpg" width="50" class="card-img-top" alt="Malick Sy" style="height: 300px;" >
           <div class="card-body">
-          <h5 card-title>Malick Sy, Monteur Vidéo & Motion Designer</h5>
+          <h2 >Malick Sy, Monteur Vidéo & Motion Designer</h2>
         <p>Montage de publicités dynamiques et création d'animations 2D/3D pour booster votre image de marque</p>
         <div class="d-flex justify-content-center py-5">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
@@ -277,9 +280,9 @@ rel="stylesheet">
 
        <div class="col-12 col-md-6 col-lg-4 py-5" data-categorie="gestion">
         <div class="card h-100 border-0 shadow-sm p-3" style="width: 18rem;" >
-          <img src="image/8.jpg" width="50px" class="card-img-top" alt="" style="height: 300px;" >
+          <img src="image/8.jpg" width="50" class="card-img-top" alt="Khadija Ba" style="height: 300px;" >
           <div class="card-body">
-          <h5 card-title>Khadija Ba, Consultante en gestion de projet</h5>
+          <h2 >Khadija Ba, Consultante en gestion de projet</h2>
         <p>J'accompagne les entreprises dans l'organisation de leurs équipes techniques pour respecter les délais et les budgets</p>
         <div class="d-flex justify-content-center py-5">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
@@ -305,9 +308,9 @@ rel="stylesheet">
 
       <div class="col-12 col-md-6 col-lg-4 py-5" data-categorie="securite">
         <div class="card h-100 border-0 shadow-sm p-3" style="width: 18rem;" >
-          <img src="image/9.jpg" width="50px" class="card-img-top" alt="" style="height: 300px;" >
+          <img src="image/9.jpg" width="50" class="card-img-top" alt="Ibrahima Dieng" style="height: 300px;" >
           <div class="card-body">
-          <h5 card-title>Ibrahima Dieng, Expert en sécurité informatique</h5>
+          <h2 >Ibrahima Dieng, Expert en sécurité informatique</h2>
         <p>Audit de sécurité, tests d'intrusion et protection de vos serveurs contre les attaques externes</p>
         <div class="d-flex justify-content-center py-5">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
@@ -330,6 +333,7 @@ rel="stylesheet">
             </div>
           </div>
       </div>
+    </div>
   </section>
   <hr>
 
@@ -338,12 +342,12 @@ rel="stylesheet">
       <div class="container">
         <div class="row">
            <div class="col-12 col-md-6 col-lg-4">
-             <img src="image/projet1.jpeg" alt="" width="70px">
-            <h5>Afritalent</h5>
+             <img src="image/projet1.jpeg" alt="logo" width="70">
+            <h2>Afritalent</h2>
               <p>La plateforme numéro 1 pour connecter les meilleurs talents africains avec les entreprises du monde entier</p>
             </div>
           <div class="col-12 col-md-6 col-lg-4">
-            <h5>Liens utiles</h5>
+            <h2>Liens utiles</h2>
               <ul class="list-unstyled">
                 <li><a href="index.html" class="text-decoration-none">Accueil</a></li>
                 <li><a href="freelances.html" class="text-decoration-none">Trouver un freelances</a></li>
@@ -354,7 +358,7 @@ rel="stylesheet">
             </div>
 
             <div class="col-12 col-md-6 col-lg-4">
-            <h5>Contact</h5>
+            <h2>Contact</h2>
               <ul class="list-unstyled">
                 <li>📍Dakar,Sénégal</li>
                 <li>📤afritalent@gmail.com</li>
